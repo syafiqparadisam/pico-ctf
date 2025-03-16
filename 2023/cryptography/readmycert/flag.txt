@@ -1,0 +1,1 @@
+picoCTF{read_mycert_41d1c74c}

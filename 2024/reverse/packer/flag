@@ -1,0 +1,4 @@
+hexs = "7069636f4354467b5539585f556e5034636b314e365f42316e34526933535f62646438343839337d"
+
+ascii_str = bytes.fromhex(hexs).decode('utf-8')
+print(ascii_str)

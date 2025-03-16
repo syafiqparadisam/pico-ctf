@@ -1,0 +1,1 @@
+picoCTF{F1AG5AND5TUFF}
