@@ -21,6 +21,7 @@ class VaultDoor6 {
     // nothing important in the last 750 pages.
     //
     // -Minion #3091
+
     public boolean checkPassword(String password) {
         if (password.length() != 32) {
             return false;
@@ -33,10 +34,10 @@ class VaultDoor6 {
             0xa , 0x6c, 0x60, 0x37, 0x30, 0x60, 0x31, 0x36,
         };
         for (int i=0; i<32; i++) {
-            if (((passBytes[i] ^ 0x55) - myBytes[i]) != 0) {
+           if (((passBytes[i] ^ 0x55) - myBytes[i]) != 0) {
                 return false;
             }
         }
-        return true;
+       return true;
     }
 }
