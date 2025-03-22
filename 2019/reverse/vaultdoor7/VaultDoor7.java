@@ -55,6 +55,7 @@ class VaultDoor7 {
             return false;
         }
         int[] x = passwordToIntArray(password);
+	System.out.println(Arrays.toString(x));
         return x[0] == 1096770097
             && x[1] == 1952395366
             && x[2] == 1600270708
