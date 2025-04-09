@@ -1,0 +1,2 @@
+picoCTF{r3v3rs312528e05}
+
