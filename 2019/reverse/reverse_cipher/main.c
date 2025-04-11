@@ -35,7 +35,7 @@ int main(int argc, char const *argv[])
   local_9 = local_41;
   fputc((int)local_41,local_28);
 
-  printf("%c\n", local_41);
+  printf("%c\n", local_41|);
   fclose(local_28);
   fclose(local_20);
 
