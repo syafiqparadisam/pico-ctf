@@ -12,12 +12,20 @@ def encrypt(plaintext, key):
         cipher.append(((ord(char) * key*311)))
     return cipher
 
+def decrypt(cipher,key):
+    plain_text = ""
+    print(key)
+    for char in cipher:
+        plain_text += chr(char // (key * 311))
+
+    return plain_text
 
 def is_prime(p):
     v = 0
     for i in range(2, p + 1):
         if p % i == 0:
             v = v + 1
+
     if v > 1:
         return False
     else:
@@ -46,17 +54,29 @@ def test(plain_text, text_key):
     print(f"b = {b}")
     u = generator(g, a, p)
     v = generator(g, b, p)
+
+    print(f"u = {u}")
+    print(f"v = {v}")
     key = generator(v, a, p)
+    print(f"key = {key}")
+
     b_key = generator(u, b, p)
+    print(f"b_key = {b_key}")
     shared_key = None
+    print(f"shared_key = {shared_key}")
     if key == b_key:
         shared_key = key
     else:
         print("Invalid key")
         return
     semi_cipher = dynamic_xor_encrypt(plain_text, text_key)
+    
+    print(f"semi_cipher = {semi_cipher}")
     cipher = encrypt(semi_cipher, shared_key)
+
+    plaintext = decrypt(cipher, shared_key)
     print(f'cipher is: {cipher}')
+    print(f'plaintext is: {plaintext}')
 
 
 if __name__ == "__main__":

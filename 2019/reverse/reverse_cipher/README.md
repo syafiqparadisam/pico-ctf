@@ -5,3 +5,5 @@ lalu lanjut index ke 9 yaitu ganjil, akan dikurangi 2 misal '1' - 2 yang mana '3
 
 dan teruskan sampai akhir
 hasil tadi = r3..... lanjutkan 
+
+run script ini 
