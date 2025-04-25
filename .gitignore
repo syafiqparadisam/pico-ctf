@@ -1,0 +1,16 @@
+*
+*.gitignore
+!*.sh
+!*.S
+!*.rs
+!*.go
+!*.cpp
+!*cipher*
+!*.enc
+!*.jpg
+!*.java
+!*.png
+!*.py
+!*.c
+!*.txt
+!*.jpeg
